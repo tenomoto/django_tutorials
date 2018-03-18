@@ -1,0 +1,7 @@
+<h1>{{ title }}</h1>
+<p>{{ description }}</p>
+<ul>
+{% for k, v in forecasts.items %}
+<li>{{ k }} {{ v.date }} {{ v.telop }} {{ v.tmin }} {{ v.tmax }}</li>
+{% endfor %}
+</ul>
