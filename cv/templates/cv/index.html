@@ -1,0 +1,16 @@
+<h1>CV</h1>
+{% if affiliation_list %}
+<ul>
+    {% for entry in affiliation_list %}
+    <li>{{ entry.date_join }} &mdash;
+        {% if entry.date_leave %}
+            {{ entry.date_leave }}
+        {% else %}
+            現在に至る
+        {% endif %}&nbsp;
+        {{ entry.institution }} {{ entry.position }}</li>
+    {% endfor %}
+</ul>
+{% else %}
+<p>No entries available.</p>
+{% endif %}
