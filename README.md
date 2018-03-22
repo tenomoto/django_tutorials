@@ -42,4 +42,6 @@ Data source: [livedoor Weather Hacks](http://weather.livedoor.com/weather_hacks/
 * When `/weather` is requsted, `index` in `weather/views.py`, then `get_loc` in `weather/weather.py` is called to parse XML and city lists are rendered in `weather/templates/weather/index.html`.
 * The forecast for the requested city is rendered in `weather/templates/weather/detail.html` using data constrcted from JSON in `get_forecast` in `weather/views.py` through `detail` in `weather/views.py`.
 
+# cv
 
+Add affiliation entries from the admin interface and render them with templates.
