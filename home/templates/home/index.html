@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block title %}ホーム{% endblock %}
+
+{% block content %}
+<h1>ホーム</h1>
+{% if user.is_authenticated %}
+<p><a href="{% url 'memberonly' %}">メンバー限定ページ</a></p>
+{% endif %}
+{% endblock %}

@@ -45,3 +45,12 @@ Data source: [livedoor Weather Hacks](http://weather.livedoor.com/weather_hacks/
 # cv
 
 Add affiliation entries from the admin interface and render them with templates.
+
+# home
+
+* homepage
+* memberonly page
+
+# accounts
+
+Authentication and signup using defaults
