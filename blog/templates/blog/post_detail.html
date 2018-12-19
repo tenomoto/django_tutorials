@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <div class="post-entry">
+    <h2>{{ post.title }}</h2>
+    <p>{{ post.body }}</p>
+  </div>
+
+  {% if request.user.id == post.author_id %}
+  <p><a href="{% url 'post_edit' post.pk %}">投稿を編集</a></p>
+  <p><a href="{% url 'post_delete' post.pk %}">投稿を削除</a></p>
+  {% endif %}
+
+{% endblock content %}

@@ -23,5 +23,6 @@ urlpatterns = [
     path('cv/', include('cv.urls')),
     path('weather/', include('weather.urls')),
     path('hello/', include('hello.urls')),
+    path('blog/', include('blog.urls')),
     path('', include('home.urls')),
 ]
